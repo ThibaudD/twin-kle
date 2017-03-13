@@ -41,18 +41,19 @@ npm run start
 
 ##With Docker:
 
-1. clone the repository
+1\. clone the repository
 ```
-git clone https://github.com/mikey1384/twin-kle.git && cd twin-kle
+git clone https://github.com/mikey1384/twin-kle.git
+cd twin-kle
 ```
-2. In /api folder there is a file with filename "rename this to - siteConfig.js" change the filename to "siteConfig.js(just remove the rename this... part)"
-3. Do the same to /source/constants/"change this filename to ..." files
-4. build the docker image and launch the api, client and the MySQL database with docker-compose
+2\. In /api folder there is a file with filename "rename this to - siteConfig.js" change the filename to "siteConfig.js(just remove the rename this... part)"
+3\. Do the same to /source/constants/"change this filename to ..." files
+4\. build the docker image and launch the api, client and the MySQL database with docker-compose
 ```
 docker-compose build
 docker-compose up
 ```
-5. open a new terminal and create and migrate the database
+5\. open a new terminal and create and migrate the database
 ```
 chmod +rx .docker/init_mysql.sh && .docker/init_mysql.sh
 ```
